@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Title } from "../title/title";
+import CleanTitle from "./title";
 
 export const Home = () => {
   const [allItems, setAllItems] = useState([]);
@@ -18,21 +19,33 @@ export const Home = () => {
   useEffect(() => {
     getAllItems()
       .then((response) => {
-        setAllItems(response.results);
+        const data = response.results;
+        return data;
+      })
+      .then((data) => {
+        const clean = data.map((obj) => new CleanTitle(obj));
+        return clean;
+      })
+      .then((clean) => {
+        setAllItems(clean);
       })
       .catch((Error) => {
         console.error("All Items Fetch Error");
       });
   }, []);
-  console.log(allItems);
+  console.log("all", allItems);
 
   const displayTitles = () => {
     const showTitles = allItems.map((key) => {
       return (
         <Title
-          nameTitle={key.title}
+          key={key.id}
+          nameTitle={key.name}
           titleSection={key.section}
+          titleAbs={key.abstract}
+          titleUrl={key.url}
           titlePubDate={key.published_date}
+          titleImg={key.thumbImg}
         />
       );
     });
