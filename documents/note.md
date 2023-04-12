@@ -7,3 +7,6 @@
 5. Design Architecture - create routes
 6. List components
 7. Create component folder in src directory
+   day 1 - Start 3pm end 4pm for planning
+8. Made Api call, make route
+9. Create function to display titles (Need to ref APIendpoint contract)
