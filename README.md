@@ -10,18 +10,8 @@
     Add Image or Logo of the project
   </a>
 
-<h3 align="center">Idea Box</h3>
+<h3 align="center">News Reader</h3>
 
-  <p align="center">
-    Idea Box App
-    <br />
-    <a href="https://github.com/pattpjy/ps-reactideabox"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/pattpjy/ps-reactideabox/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/pattpjy/ps-reactideabox/issues">Request Feature</a>
-  </p>
 </div>
 
 <details>
@@ -46,9 +36,8 @@
 
 ## About The Project
 
-Add vdo walk through
-
-Add Project description
+A news reader application that pulls articles from the New York Times API Top Stories API.
+Deployed site
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -57,10 +46,8 @@ Add Project description
 [![Javascript][javascript.js]][javascript-url]
 [![CSS][css]][css-url]
 [![HTML][html]][html-url]
-[![Webpack][webpack]][webpack-url]
+[![React][react]][react-url]
 [![API][api]][api-url]
-[![Mocha][mocha]][mocha-url]
-[![Chai][chai]][chai-url]
 [![Git][git]][git-url]
 [![GitHub][github]][github-url]
 
@@ -70,54 +57,39 @@ Add Project description
 
 ### Installation
 
-1. Fork the Repo from the [Repository](https://github.com/turingschool-examples/fitlit-starter-kit)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone git@github.com:pattpjy/ps-reactideabox.git
+   git clone git@github.com:pattpjy/th-news-reader.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Run npm start
-   ```sh
-   npm start
-   ```
-5. Use the Link that is given in the Terminal & Open in Browser
-   ```sh
-   Example: http://localhost:8080/
-   ```
-
-## API Installation
-
-6. Clone the repo
-   ```sh
-   git clone git@github.com:xxxx
-   ```
-7. cd into it from terminal
-8. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-9. Run npm start
+3. Run npm start
    ```sh
-   npm start
+   npm run dev
    ```
-10. Close using control + c
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+4. Use the Link that is given in the Terminal & Open in Browser
+   ```sh
+   Example: http://localhost:5173/
+   ```
 
 <!-- ARCHITECTURE -->
 
 ## Architecture
+
+First iteration - single page with top news on page load
+Second iteration 
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- ROADMAP -->
 
 ## Roadmap
 
-- [] Need update
-- [] Need update
+- [x] functional MVP
+- [] style MVP
+- [] second itereation MVP
 
 See the [open issues](https://github.com/pattpjy/ps-reactideabox/issues) for a full list of proposed features (and known issues).
 
@@ -125,7 +97,8 @@ See the [open issues](https://github.com/pattpjy/ps-reactideabox/issues) for a f
 
 ## Future Additions
 
-- need update
+- second iteration - create multipages News sections 
+- third iteration - add search keyword function for each page
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,8 +118,8 @@ See the [open issues](https://github.com/pattpjy/ps-reactideabox/issues) for a f
 [webpack-url]: https://webpack.js.org/
 [dayjs]: https://img.shields.io/badge/-dayjs-fb6052?style=for-the-badge
 [dayjs-url]: https://www.npmjs.com/package/dayjs
-[chart.js]: https://img.shields.io/badge/Chart.js-35495E?style=for-the-badge&logo=chartdotjs&logoColor=4FC08D
-[chart.js-url]: https://www.chartjs.org/
+[React]: https://img.shields.io/badge/React-35495E?logo=react&style=for-the-badge
+[react-url]: https://www.chartjs.org/
 [css]: https://img.shields.io/badge/CSS-000000?style=for-the-badge&logo=css&logoColor=white
 [css-url]: https://www.w3.org/Style/CSS/Overview.en.html
 [html]: https://img.shields.io/badge/HTML-4A4A55?style=for-the-badge&logo=HTML&logoColor=FF3E00
