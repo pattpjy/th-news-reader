@@ -8,12 +8,17 @@
 }
 
 .side-bar {
+  top: 0;
   position: sticky;
+  width: 20em;
+  background-color: #dad8d8;
 }
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+header {
+  font-family: Avenir;
+  font-size: 6em;
+  text-align: center;
+  width: auto;
 }
 
 .card {
@@ -22,4 +27,10 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.display-title {
+  display: flex;
+  flex-direction: column;
+  width: auto;
 }
