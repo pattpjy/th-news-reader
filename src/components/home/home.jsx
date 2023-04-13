@@ -1,20 +1,11 @@
 import { useState, useEffect } from "react";
 import { Title } from "../title/title";
 import CleanTitle from "./cleanTitle";
-
+import { getAllItems, getSectionItems } from "../api/apiCall";
+import { SideBar } from "../sideBar/sideBar";
+import "./home.css";
 export const Home = () => {
   const [allItems, setAllItems] = useState([]);
-
-  //make api call for allTopic
-  const getAllItems = async () => {
-    const url =
-      "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=p2reGHQM99Whk2wrILbwUVApda6dIjn8";
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error("Unable To Fetch Your Data. Try Later.");
-    }
-    return response.json();
-  };
 
   useEffect(() => {
     getAllItems()
@@ -23,7 +14,7 @@ export const Home = () => {
         return data;
       })
       .then((data) => {
-        const clean = data.map((obj) => new CleanTitle(obj));
+        const clean = data.map((obj, index) => new CleanTitle(obj, index));
         return clean;
       })
       .then((clean) => {
@@ -33,27 +24,36 @@ export const Home = () => {
         console.error("All Items Fetch Error");
       });
   }, []);
-  console.log("all", allItems);
 
   const displayTitles = () => {
-    const showTitles = allItems.map((key) => {
+    const showTitles = allItems.map((key, index) => {
       return (
         <>
           <Title
-            titleID={key.id}
-            key={key.id}
-            nameTitle={key.name}
+            key={`titleNo.1${index}`}
+            nameTitle={key.title}
             titleSection={key.section}
             titleAbs={key.abstract}
             titlePubDate={key.published_date}
             titleImg={key.thumbImg}
             titleUrl={key.url}
           />
-          {/* <Details detailUrl={key.url} /> */}
         </>
       );
     });
     return showTitles;
   };
-  return <div>{displayTitles()}</div>;
+
+  const displaySection = async (section) => {
+    const allSectionTitles = await getSectionItems(section);
+    setAllItems(allSectionTitles.results);
+  };
+  return (
+    <div className="container">
+      <div className="side-bar">
+        <SideBar getSection={displaySection} />
+      </div>
+      <div>{displayTitles()}</div>
+    </div>
+  );
 };

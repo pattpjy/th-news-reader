@@ -11,5 +11,5 @@
 8. Made Api call, make route
 9. Create function to display titles (Need to ref APIendpoint contract)
 10. add cleanTitle class instantiation
-
-next is add link and image
+11. next is add link and image
+12. Create sidebar button with apiCall query by section

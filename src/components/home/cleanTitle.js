@@ -1,7 +1,7 @@
 class CleanTitle {
-  constructor(titleObj) {
-    this.id = Date.now();
-    this.name = titleObj.title;
+  constructor(titleObj, index) {
+    this.key = index;
+    this.title = titleObj.title;
     this.section = titleObj.section;
     this.abstract = titleObj.abstract;
     this.url = titleObj.short_url;
