@@ -4,7 +4,7 @@
 2. create readme and ensure node_module is in gitIgnore
 3. create project board following instruction and rubric
 4. From user stroy create draft UI
-5. Design Architecture - choose design pattern, repo, class Container and Presentational Components , hook for useState - create routes
+5. Design Architecture - choose design pattern, repo, class Container and Presentational Components , hook for useState
 6. List components
 7. Create component folder in src directory
    day 1 - Start 3pm end 4pm for planning

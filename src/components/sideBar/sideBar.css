@@ -1,4 +1,5 @@
 .nav-box {
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
   position: sticky;

@@ -35,7 +35,7 @@ export const App = () => {
             nameTitle={key.title}
             titleSection={key.section}
             titleAbs={key.abstract}
-            titlePubDate={key.published_date}
+            titlePubDate={key.publication_date}
             titleImg={key.thumbImg}
             titleUrl={key.url}
           />
@@ -53,11 +53,14 @@ export const App = () => {
     setAllItems(clean);
   };
   return (
-    <div className="container">
-      <div className="side-bar">
-        <SideBar getSection={displaySection} />
+    <>
+      <header>Daily News Update</header>
+      <div className="container">
+        <div className="side-bar">
+          <SideBar getSection={displaySection} />
+        </div>
+        <div className="display-title">{displayTitles()}</div>
       </div>
-      <div>{displayTitles()}</div>
-    </div>
+    </>
   );
 };

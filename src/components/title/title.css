@@ -1,3 +1,28 @@
 .title-card {
-  border: solid white 1px;
+  border-bottom: solid white 4px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #c4c2c2;
+}
+
+.title-image {
+  width: 200px;
+  margin: 1em;
+}
+
+.title-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1em 0 1em;
+}
+.title-body {
+  display: flex;
+  align-items: center;
+}
+
+b {
+  margin: 0 1em 0 1em;
 }
