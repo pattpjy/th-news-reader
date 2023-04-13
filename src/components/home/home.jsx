@@ -6,6 +6,7 @@ import { SideBar } from "../sideBar/sideBar";
 import "./home.css";
 export const Home = () => {
   const [allItems, setAllItems] = useState([]);
+  const [errorImg, setErrorImg] = useState(false);
 
   useEffect(() => {
     getAllItems()
