@@ -1,16 +1,24 @@
 import React from "react";
 import "./title.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-export const Title = ({ nameTitle, titleSection, titlePubDate }) => {
+export const Title = ({
+  titleID,
+  nameTitle,
+  titleSection,
+  titleAbs,
+  titleUrl,
+  titlePubDate,
+  titleImg,
+}) => {
   return (
-    <Link>
+    <a href={titleUrl}>
       <div className="title-card">
-        {/* <img></img> */}
+        <img src={titleImg} />
         <p>{titleSection}</p>
         <b>{nameTitle}</b>
         <p>{titlePubDate}</p>
       </div>
-    </Link>
+    </a>
   );
 };

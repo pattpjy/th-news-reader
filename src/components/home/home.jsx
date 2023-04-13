@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Title } from "../title/title";
-import CleanTitle from "./title";
+import CleanTitle from "./cleanTitle";
 
 export const Home = () => {
   const [allItems, setAllItems] = useState([]);
@@ -38,15 +38,19 @@ export const Home = () => {
   const displayTitles = () => {
     const showTitles = allItems.map((key) => {
       return (
-        <Title
-          key={key.id}
-          nameTitle={key.name}
-          titleSection={key.section}
-          titleAbs={key.abstract}
-          titleUrl={key.url}
-          titlePubDate={key.published_date}
-          titleImg={key.thumbImg}
-        />
+        <>
+          <Title
+            titleID={key.id}
+            key={key.id}
+            nameTitle={key.name}
+            titleSection={key.section}
+            titleAbs={key.abstract}
+            titlePubDate={key.published_date}
+            titleImg={key.thumbImg}
+            titleUrl={key.url}
+          />
+          {/* <Details detailUrl={key.url} /> */}
+        </>
       );
     });
     return showTitles;
