@@ -6,9 +6,6 @@
 <br />
 
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    Add Image or Logo of the project
-  </a>
 
 <h3 align="center">News Reader</h3>
 
@@ -88,7 +85,7 @@ Second iteration
 ## Roadmap
 
 - [x] functional MVP
-- [] style MVP
+- [x] style MVP
 - [] second itereation MVP
 
 See the [open issues](https://github.com/pattpjy/ps-reactideabox/issues) for a full list of proposed features (and known issues).
@@ -96,7 +93,7 @@ See the [open issues](https://github.com/pattpjy/ps-reactideabox/issues) for a f
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Future Additions
-
+- create collapsible sidebar 
 - second iteration - create multipages News sections 
 - third iteration - add search keyword function for each page
 
