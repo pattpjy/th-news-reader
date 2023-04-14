@@ -15,13 +15,15 @@ export const SideBar = ({ getSection }) => {
           onclickHandler("home");
         }}
       >
-        Home
+        <i class="fa-solid fa-house"></i>
+        Tops
       </button>
       <button
         onClick={(e) => {
           onclickHandler("movies");
         }}
       >
+        <i class="fa-solid fa-film"></i>
         Movie
       </button>
       <button
@@ -29,6 +31,7 @@ export const SideBar = ({ getSection }) => {
           onclickHandler("business");
         }}
       >
+        <i class="fa-solid fa-chart-line-up"></i>
         Business
       </button>
       <button
@@ -36,6 +39,7 @@ export const SideBar = ({ getSection }) => {
           onclickHandler("fashion");
         }}
       >
+        <i class="fa-solid fa-clothes-hanger"></i>
         Fashion
       </button>
     </NavLink>
