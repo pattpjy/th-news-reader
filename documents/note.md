@@ -13,3 +13,4 @@
 10. add cleanTitle class instantiation
 11. next is add link and image
 12. Create sidebar button with apiCall query by section
+13. think about how to structure multi-page structure
