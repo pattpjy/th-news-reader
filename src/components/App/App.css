@@ -1,4 +1,4 @@
-.main {
+main {
   display: flex;
   flex-direction: row;
 }
@@ -8,10 +8,10 @@
 }
 
 .side-bar {
-  top: 0;
-  position: sticky;
-  width: 20em;
+  width: auto;
+  height: 30em;
   background-color: #dad8d8;
+  overflow-y: auto;
 }
 
 header {

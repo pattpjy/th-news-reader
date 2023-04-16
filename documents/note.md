@@ -14,3 +14,9 @@
 11. next is add link and image
 12. Create sidebar button with apiCall query by section
 13. think about how to structure multi-page structure
+
+- move component to home file
+- add routes and import component to App
+- change container components
+- change navBar to links
+- add error handling in the same components
