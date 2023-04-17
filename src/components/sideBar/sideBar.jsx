@@ -1,10 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "./sideBar.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const SideBar = ({ getSection }) => {
-  const location = useLocation();
-  console.log(location);
   const onclickHandler = (section) => {
     getSection(section);
   };
@@ -50,5 +48,10 @@ export const SideBar = ({ getSection }) => {
     return sectionLinks;
   };
   //onclick method to render a list from apiCall
-  return <div className="nav-box">{makeSection()}</div>;
+  return (
+    <div className="nav-box">
+      <Link to="/">Home</Link>
+      {makeSection()}
+    </div>
+  );
 };

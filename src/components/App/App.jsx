@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router";
 import { Home } from "../home/home";
 import { Section } from "../section/Section";
 import { SideBar } from "../sideBar/sideBar";
+import { TitlePrev } from "../titlePreview/TitlePrev";
 export const App = () => {
   return (
     <main>
@@ -12,6 +13,7 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:section" element={<Section />} />
+        <Route path="/:section/:title" element={<TitlePrev />} />
       </Routes>
     </main>
   );

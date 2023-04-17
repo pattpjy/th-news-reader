@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Title } from "../title/title";
 import CleanTitle from "../home/cleanTitle";
 import { getAllItems } from "../api/apiCall";
-
 import "./home.css";
 
 export const Home = () => {

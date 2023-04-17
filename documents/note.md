@@ -13,10 +13,17 @@
 10. add cleanTitle class instantiation
 11. next is add link and image
 12. Create sidebar button with apiCall query by section
-13. think about how to structure multi-page structure
+    --- meet MVP for first iteration ---
+13. think about how to structure multi-page structure - add title preview page
+14. move component to home file
+15. add routes and import components to App router
+16. add list of sections
+17. change sidebar button to Link hook
+18. add titles preview component
+19. add route to title preview component
+20. change a tag in title from url to Link
 
-- move component to home file
-- add routes and import component to App
-- change container components
-- change navBar to links
-- add error handling in the same components
+- redo section
+- move class instance to apiCall
+- add image placeholder to class
+- add dayjs

@@ -8,7 +8,7 @@ main {
 }
 
 .side-bar {
-  width: auto;
+  width: 12em;
   height: 30em;
   background-color: #dad8d8;
   overflow-y: auto;
