@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Title } from "../title/title";
-import CleanTitle from "../api/cleanTitle";
 import { getTopTitle } from "../api/apiCall";
 import "./home.css";
 

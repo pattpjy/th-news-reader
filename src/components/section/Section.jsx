@@ -1,22 +1,13 @@
 import { useState } from "react";
 import { Title } from "../title/title";
-import CleanTitle from "../api/cleanTitle";
-import { getSectionItems } from "../api/apiCall";
+import { getSectionTitle } from "../api/apiCall";
 import "./section.css";
 import { useParams } from "react-router-dom";
 
 export const Section = () => {
   const [allItems, setAllItems] = useState([]);
   const { section } = useParams();
-  getSectionItems(section)
-    .then((response) => {
-      const data = response.results;
-      return data;
-    })
-    .then((data) => {
-      const clean = data.map((obj, index) => new CleanTitle(obj, index));
-      return clean;
-    })
+  getSectionTitle(section)
     .then((clean) => {
       setAllItems(clean);
     })
@@ -42,6 +33,7 @@ export const Section = () => {
     <div className="display-title">
       <h1>Section : {section}</h1>
       {displayTitles()}
+      <button>Read full</button>
     </div>
   );
 };

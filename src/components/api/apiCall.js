@@ -11,7 +11,7 @@ import CleanTitle from "../api/cleanTitle";
 
 // function to create a section Api call
 
-export const getSectionItems = async (section) => {
+const fetchApiData = async (section) => {
   const url = `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=p2reGHQM99Whk2wrILbwUVApda6dIjn8`;
   const response = await fetch(url);
   if (!response.ok) {
@@ -21,8 +21,16 @@ export const getSectionItems = async (section) => {
 };
 
 export const getTopTitle = async () => {
-  const topTitles = await getSectionItems("home");
+  const topTitles = await fetchApiData("home");
   const data = topTitles.results.map(
+    (obj, index) => new CleanTitle(obj, index)
+  );
+  return data;
+};
+
+export const getSectionTitle = async (section) => {
+  const sectionTitles = await fetchApiData(section);
+  const data = sectionTitles.results.map(
     (obj, index) => new CleanTitle(obj, index)
   );
   return data;
