@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Title } from "../title/title";
-import CleanTitle from "../home/cleanTitle";
+import CleanTitle from "../api/cleanTitle";
 import { getSectionItems } from "../api/apiCall";
 import "./section.css";
 import { useParams } from "react-router-dom";

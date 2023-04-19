@@ -22,8 +22,8 @@
 18. add titles preview component
 19. add route to title preview component
 20. change a tag in title from url to Link
+21. redo section
 
-- redo section
 - move class instance to apiCall
 - add image placeholder to class
 - add dayjs

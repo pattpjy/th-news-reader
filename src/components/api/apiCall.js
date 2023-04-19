@@ -1,12 +1,13 @@
-export const getAllItems = async () => {
-  const url =
-    "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=p2reGHQM99Whk2wrILbwUVApda6dIjn8";
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error("Unable To Fetch Your Data. Try Later.");
-  }
-  return response.json();
-};
+import CleanTitle from "../api/cleanTitle";
+
+// export const getAllItems = async (section) => {
+//   const url = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=p2reGHQM99Whk2wrILbwUVApda6dIjn8`;
+//   const response = await fetch(url);
+//   if (!response.ok) {
+//     throw new Error("Unable To Fetch Your Data. Try Later.");
+//   }
+//   return response.json();
+// };
 
 // function to create a section Api call
 
@@ -17,4 +18,12 @@ export const getSectionItems = async (section) => {
     throw new Error("Unable To Fetch Your Data. Try Later.");
   }
   return response.json();
+};
+
+export const getTopTitle = async () => {
+  const topTitles = await getSectionItems("home");
+  const data = topTitles.results.map(
+    (obj, index) => new CleanTitle(obj, index)
+  );
+  return data;
 };
