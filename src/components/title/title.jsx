@@ -1,6 +1,6 @@
 import React from "react";
 import "./title.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Title = ({
   nameTitle,
@@ -11,7 +11,16 @@ export const Title = ({
   titleImg,
 }) => {
   return (
-    <a href={titleUrl}>
+    <Link
+      to={`/${titleSection}/${nameTitle}`}
+      state={{
+        titleName: nameTitle,
+        titleUrl: titleUrl,
+        titleDate: titlePubDate,
+        abstract: titleAbs,
+        img: titleImg,
+      }}
+    >
       <div className="title-card">
         <div className="title-top">
           <p>{titleSection}</p>
@@ -22,6 +31,6 @@ export const Title = ({
           <b>{nameTitle}</b>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
