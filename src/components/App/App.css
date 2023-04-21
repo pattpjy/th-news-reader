@@ -1,6 +1,7 @@
 main {
   display: flex;
   flex-direction: row;
+  width: auto;
 }
 .container {
   display: flex;
@@ -8,17 +9,20 @@ main {
 }
 
 .side-bar {
-  width: 12em;
+  margin-top: 8em;
+  width: 30%;
   height: 30em;
   background-color: #dad8d8;
+  top: 0;
+  position: sticky;
   overflow-y: auto;
 }
 
 header {
   font-family: Avenir;
-  font-size: 6em;
+  font-size: 5em;
   text-align: center;
-  width: auto;
+  width: 55rem;
 }
 
 .card {

@@ -1,6 +1,6 @@
 .title-card {
   border-bottom: solid white 4px;
-  width: auto;
+  min-width: 20em;
   display: flex;
   flex-direction: column;
   background-color: #c4c2c2;

@@ -1,12 +1,21 @@
 import { useState, useEffect } from "react";
 import { Title } from "../title/title";
-import { getTopTitle } from "../api/apiCall";
+import { getTopTitle, getDummy } from "../api/apiCall";
 import "./home.css";
 
 export const Home = () => {
   const [allItems, setAllItems] = useState([]);
   useEffect(() => {
     const fetchTops = async () => {
+      //---dummy------
+      //   const titleData = await getDummy();
+      //   setAllItems(titleData);
+      // };
+      // fetchTops().catch((Error) => {
+      //   console.error("All Items Fetch Error");
+      // });
+
+      //----apiCall-----
       const titleData = await getTopTitle();
       setAllItems(titleData);
     };

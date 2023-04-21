@@ -1,4 +1,6 @@
-import CleanTitle from "../api/cleanTitle";
+import CleanTitle from "./cleanTitle";
+import { dummy } from "./dummyData";
+
 const apiKey = import.meta.env.VITE_API_KEY;
 
 const fetchApiData = async (section) => {
@@ -23,5 +25,10 @@ export const getSectionTitle = async (section) => {
   const data = sectionTitles.results.map(
     (obj, index) => new CleanTitle(obj, index)
   );
+  return data;
+};
+
+export const getDummy = () => {
+  const data = dummy.results.map((obj, index) => new CleanTitle(obj, index));
   return data;
 };

@@ -1,8 +1,8 @@
 .nav-box {
-  margin: 2em;
+  margin: 1em;
   background-color: #dad8d8;
   display: flex;
   flex-direction: column;
   top: 0;
-  width: 12em;
+  width: auto;
 }

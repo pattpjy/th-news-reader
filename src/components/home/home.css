@@ -7,13 +7,6 @@
   flex-direction: row;
 }
 
-header {
-  font-family: Avenir;
-  font-size: 6em;
-  text-align: center;
-  width: auto;
-}
-
 .card {
   padding: 2em;
 }

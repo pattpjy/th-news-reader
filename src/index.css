@@ -1,8 +1,14 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
 a {
   font-weight: 500;
   color: #242424;
   text-decoration: inherit;
-  width: fit-content;
+  width: auto;
   /* border: 2px solid transparent; */
 }
 
