@@ -1,18 +1,8 @@
 import CleanTitle from "../api/cleanTitle";
-
-// export const getAllItems = async (section) => {
-//   const url = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=p2reGHQM99Whk2wrILbwUVApda6dIjn8`;
-//   const response = await fetch(url);
-//   if (!response.ok) {
-//     throw new Error("Unable To Fetch Your Data. Try Later.");
-//   }
-//   return response.json();
-// };
-
-// function to create a section Api call
+const apiKey = import.meta.env.VITE_API_KEY;
 
 const fetchApiData = async (section) => {
-  const url = `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=p2reGHQM99Whk2wrILbwUVApda6dIjn8`;
+  const url = `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=${apiKey}`;
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error("Unable To Fetch Your Data. Try Later.");

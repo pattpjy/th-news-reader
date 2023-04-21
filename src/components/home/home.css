@@ -25,5 +25,5 @@ header {
 .display-title {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 20em;
 }
