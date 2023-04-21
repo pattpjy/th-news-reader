@@ -2,7 +2,7 @@ a {
   font-weight: 500;
   color: #242424;
   text-decoration: inherit;
-  width: auto;
+  width: fit-content;
   /* border: 2px solid transparent; */
 }
 
