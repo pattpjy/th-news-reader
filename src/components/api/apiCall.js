@@ -1,7 +1,7 @@
 import CleanTitle from "./cleanTitle";
 import { dummy } from "./dummyData";
 
-const apiKey = import.meta.env.PUBLIC_API_KEY;
+const apiKey = import.meta.env.VITE_API_KEY;
 
 const fetchApiData = async (section) => {
   const url = `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=${apiKey}`;
