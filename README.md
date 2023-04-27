@@ -42,7 +42,6 @@ By using the News Reader app, users can easily get access to the most recent new
 
 [![Javascript][javascript.js]][javascript-url]
 [![CSS][css]][css-url]
-[![HTML][html]][html-url]
 [![React][react]][react-url]
 [![API][api]][api-url]
 [![Git][git]][git-url]
