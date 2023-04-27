@@ -32,9 +32,9 @@
 </details>
 
 ## About The Project
+News Reader is an application that pulls articles from the New York Times API Top Stories API. This application allows users to stay up-to-date with the latest news and events by providing access to top stories from the New York Times.
 
-A news reader application that pulls articles from the New York Times API Top Stories API.
-Deployed site
+By using the News Reader app, users can easily get access to the most recent news articles published by the New York Times. The app pulls articles from different categories like world, business, technology, science, and sports. This variety of categories ensures that users can find articles of their interest.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
