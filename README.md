@@ -75,8 +75,8 @@ Deployed site
 
 ## Architecture
 
-First iteration - single page with top news on page load
-Second iteration 
+First iteration - single page with top news section on page load and responsive layout.
+Second iteration - adding routes to other news sections and a preview page that direct user to nyt website.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -86,7 +86,7 @@ Second iteration
 
 - [x] functional MVP
 - [x] style MVP
-- [] second itereation MVP
+- [x] second itereation MVP
 
 See the [open issues](https://github.com/pattpjy/ps-reactideabox/issues) for a full list of proposed features (and known issues).
 
@@ -99,18 +99,8 @@ See the [open issues](https://github.com/pattpjy/ps-reactideabox/issues) for a f
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[ian-badge]: https://img.shields.io/badge/-Ian%20Nordby-orange
-[ian-url]: https://github.com/nordbyi
 [patt-badge]: https://img.shields.io/badge/-Patt%20Sookmark-brightgreen
 [patt-url]: https://github.com/pattpjy
-[rae-badge]: https://img.shields.io/badge/-Rae%20Gebhart-blue
-[rae-url]: https://github.com/rae-107
-[jordan-badge]: https://img.shields.io/badge/-Jordan%20Smith-lightgrey
-[jordan-url]: https://github.com/jaysmith2022
-[mocha]: https://img.shields.io/badge/Mocha-FF2D20?style=for-the-badge&logo=mocha&logoColor=white
-[mocha-url]: https://mochajs.org/
-[chai]: https://img.shields.io/badge/Chai-20232A?style=for-the-badge&logo=chai&logoColor=61DAFB
-[chai-url]: https://www.chaijs.com/
 [webpack]: https://img.shields.io/badge/Webpack-563D7C?style=for-the-badge&logo=webpack&logoColor=white
 [webpack-url]: https://webpack.js.org/
 [dayjs]: https://img.shields.io/badge/-dayjs-fb6052?style=for-the-badge
@@ -119,8 +109,6 @@ See the [open issues](https://github.com/pattpjy/ps-reactideabox/issues) for a f
 [react-url]: https://www.chartjs.org/
 [css]: https://img.shields.io/badge/CSS-000000?style=for-the-badge&logo=css&logoColor=white
 [css-url]: https://www.w3.org/Style/CSS/Overview.en.html
-[html]: https://img.shields.io/badge/HTML-4A4A55?style=for-the-badge&logo=HTML&logoColor=FF3E00
-[html-url]: https://www.w3schools.com/howto/howto_make_a_website.asp
 [javascript.js]: https://img.shields.io/badge/JavaScript-0769AD?style=for-the-badge&logo=javascript&logoColor=white
 [javascript-url]: https://www.javascript.com/
 [api]: https://img.shields.io/badge/API-15EA75?style=for-the-badge&logo=HTML&logoColor=FF3E00
