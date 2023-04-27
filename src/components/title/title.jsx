@@ -14,6 +14,7 @@ export const Title = ({
     <Link
       to={`/${titleSection}/${nameTitle}`}
       state={{
+        section: titleSection,
         titleName: nameTitle,
         titleUrl: titleUrl,
         titleDate: titlePubDate,
@@ -23,12 +24,12 @@ export const Title = ({
     >
       <div className="title-card">
         <div className="title-top">
-          <p>{titleSection}</p>
-          <p>{titlePubDate}</p>
+          <p>Section: {titleSection}</p>
+          <p>Date: {titlePubDate}</p>
         </div>
         <div className="title-body">
           <img className="title-image" alt="" src={titleImg} />
-          <b>{nameTitle}</b>
+          {nameTitle}
         </div>
       </div>
     </Link>

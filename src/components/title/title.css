@@ -1,9 +1,11 @@
 .title-card {
   border-bottom: solid white 4px;
+  max-width: 60em;
+  margin: 2em;
   min-width: 20em;
   display: flex;
   flex-direction: column;
-  background-color: #c4c2c2;
+  background-color: rgba(252, 249, 244, 1);
 }
 
 .title-image {

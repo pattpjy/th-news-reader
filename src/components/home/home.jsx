@@ -42,9 +42,9 @@ export const Home = () => {
   };
 
   return (
-    <div>
-      <header>Daily News Update</header>
-      <div className="display-title">{displayTitles()}</div>
+    <div className="display-title">
+      <h1>Daily News Update</h1>
+      {displayTitles()}
     </div>
   );
 };

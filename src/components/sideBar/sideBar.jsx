@@ -50,7 +50,7 @@ export const SideBar = ({ getSection }) => {
   //onclick method to render a list from apiCall
   return (
     <div className="nav-box">
-      <Link to="/">Home</Link>
+      {/* <Link to="/">Home</Link> */}
       {makeSection()}
     </div>
   );

@@ -1,25 +1,36 @@
 main {
   display: flex;
   flex-direction: row;
-  width: auto;
-}
-.container {
-  display: flex;
-  flex-direction: row;
+  max-width: 60em;
+  padding: 2em;
+  margin: 2em;
+  border: 5px solid rgba(227, 166, 148, 1);
+  border-radius: 20px;
+  background-color: inherit;
+  font-family: "Inter", sans-serif;
 }
 
-.side-bar {
-  margin-top: 8em;
-  width: 30%;
-  height: 30em;
-  background-color: #dad8d8;
+.fa-light.fa-newspaper {
+  color: #73a264;
+  font-size: 5em;
+  position: sticky;
   top: 0;
+  margin: 1em;
+}
+.section-h2 {
+  position: sticky;
+  top: 3em;
+}
+.side-bar {
+  width: auto;
+  height: 30em;
+  top: 6em;
   position: sticky;
   overflow-y: auto;
 }
 
 header {
-  font-family: Avenir;
+  font-family: "Merriweather", serif;
   font-size: 5em;
   text-align: center;
   width: 55rem;

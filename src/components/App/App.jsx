@@ -4,11 +4,19 @@ import { Home } from "../home/home";
 import { Section } from "../section/Section";
 import { SideBar } from "../sideBar/sideBar";
 import { TitlePrev } from "../titlePreview/TitlePrev";
+import { Link } from "react-router-dom";
+
 export const App = () => {
   return (
     <main>
-      <div className="side-bar">
-        <SideBar />
+      <div>
+        <Link to="/">
+          <i className="fa-light fa-newspaper"></i>
+        </Link>
+        <h2 className="section-h2">Select section:</h2>
+        <div className="side-bar">
+          <SideBar />
+        </div>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />

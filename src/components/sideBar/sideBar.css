@@ -1,8 +1,59 @@
 .nav-box {
   margin: 1em;
-  background-color: #dad8d8;
   display: flex;
   flex-direction: column;
   top: 0;
   width: auto;
+  /* position: sticky; */
+}
+
+.section-link {
+  background-color: transparent;
+  width: 10em;
+  margin: 1em;
+  border: 1px solid rgba(96, 77, 66, 1);
+  box-sizing: border-box;
+  color: #00132c;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.section-link:hover,
+.section-link:active {
+  outline: 0;
+}
+
+.section-link:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.section-link:before {
+  background-color: rgb(230, 188, 176);
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.section-link:hover:before {
+  background-color: rgba(227, 166, 148, 1);
+}
+
+@media (min-width: 768px) {
+  .section-link {
+    padding: 16px 32px;
+  }
 }
